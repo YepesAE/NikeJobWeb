@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Nike Jobs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <img src="./images/nike-logo-white.png" alt="alt" id="nike-logo"/>
+            <div class="box">
+                <h1>Nike Jobs</h1>
+                <div class="input-div">
+                    <p>Usuario</p>
+                    <input id="user" type="text" value="" class="box-button"/>
+                </div>
+                <div class="input-div">
+                    <p>Contraseña</p>
+                    <input id="password" type="password" value="" class="box-button"/>
+                </div>
+                <input class="submit-button" type="submit" value="ACCEDER" onclick="login()"/>
+                <form id="register-form" action="RegisterServlet" method="post">
+                    <p>Si no tienes cuenta, registrate </p>
+                    <input id="register" type="submit" value="aquí">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
