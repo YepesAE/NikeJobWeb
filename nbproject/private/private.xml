@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/yepes/NetBeansProjects/NikeJobs/src/java/RegisterServlet.java</file>
-            <file>file:/home/yepes/NetBeansProjects/NikeJobs/web/index.html</file>
-            <file>file:/home/yepes/NetBeansProjects/NikeJobs/web/styles.css</file>
-            <file>file:/home/yepes/NetBeansProjects/NikeJobs/src/java/addNewUser.java</file>
-            <file>file:/home/yepes/NetBeansProjects/NikeJobs/web/scripts.js</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/web/content.html</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/web/styles.css</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/src/java/TestsServlet.java</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/web/index.html</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/src/java/LoginServlet.java</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/web/scripts.js</file>
+            <file>file:/C:/Users/Antho/Documents/NetBeansProjects/NikeJobWeb/web/tests.html</file>
         </group>
     </open-files>
 </project-private>

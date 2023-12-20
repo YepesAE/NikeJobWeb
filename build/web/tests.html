@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Nike Tests</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <img src="./images/nike-logo-verde.png" alt="alt" class="logo"/>
+                <a href="index.html">Log out</a>
+            </div>
+            <div class="test-box2">
+                <h3>Ten en cuenta que una vez que elijas test no podrás volver atrás</h3>
+            </div>
+            <div class="test-box" >
+                <h3 onclick="openTest(1)">Test 1</h3>
+                <div class="quiz">
+                    <div class="question">
+                        <p>1. ¿En qué año se celebraron los primeros Juegos Olímpicos modernos?</p>
+                        <input type="radio" name="q1" value="false"> a) 1886<br>
+                        <input type="radio" name="q1" value="true"> b) 1896<br>
+                        <input type="radio" name="q1" value="false"> c) 1904
+                    </div>
+                    <div class="question">
+                        <p>2. ¿Cuántos jugadores hay en un equipo de fútbol durante un partido?</p>
+                        <input type="radio" name="q2" value="false"> a) 9<br>
+                        <input type="radio" name="q2" value="true"> b) 11<br>
+                        <input type="radio" name="q2" value="false"> c) 7
+                    </div>
+                    <div class="question">
+                        <p>3. ¿Cuál es el deporte asociado con Wimbledon?</p>
+                        <input type="radio" name="q3" value="false"> a) Golf<br>
+                        <input type="radio" name="q3" value="true"> b) Tenis<br>
+                        <input type="radio" name="q3" value="false"> c) Cricket
+                    </div>
+                    <div class="question">
+                        <p>4. ¿En qué año se celebraron los primeros Juegos Olímpicos modernos?</p>
+                        <input type="radio" name="q4" value="false"> a) 1886<br>
+                        <input type="radio" name="q4" value="true"> b) 1896<br>
+                        <input type="radio" name="q4" value="false"> c) 1904
+                    </div>
+                    <div class="question">
+                        <p>5. ¿Cuántos jugadores hay en un equipo de fútbol durante un partido?</p>
+                        <input type="radio" name="q5" value="false"> a) 9<br>
+                        <input type="radio" name="q5" value="true"> b) 11<br>
+                        <input type="radio" name="q5" value="false"> c) 7
+                    </div>
+                    <div class="question">
+                        <p>6. ¿Cuál es el deporte asociado con Wimbledon?</p>
+                        <input type="radio" name="q6" value="false"> a) Golf<br>
+                        <input type="radio" name="q6" value="true"> b) Tenis<br>
+                        <input type="radio" name="q6" value="false"> c) Cricket
+                    </div>
+                    <div class="question">
+                        <p>7. ¿En qué país se originó el deporte del judo?</p>
+                        <input type="radio" name="q7" value="false"> a) China<br>
+                        <input type="radio" name="q7" value="true"> b) Japón<br>
+                        <input type="radio" name="q7" value="false"> c) Corea del Sur
+                    </div>
+                    <div class="question">
+                        <p>8. ¿Cuál de los siguientes es un equipo de la NBA?</p>
+                        <input type="radio" name="q8" value="false"> a) FC Barcelona<br>
+                        <input type="radio" name="q8" value="true"> b) Los Angeles Lakers<br>
+                        <input type="radio" name="q8" value="false"> c) Manchester United
+                    </div>
+                    <div class="question">
+                        <p>9. ¿Cuántos jugadores hay en un equipo de vóley durante un partido?</p>
+                        <input type="radio" name="q9" value="false"> a) 5<br>
+                        <input type="radio" name="q9" value="true"> b) 6<br>
+                        <input type="radio" name="q9" value="false"> c) 7
+                    </div>
+                    <div class="question">
+                        <p>10. ¿Cuál es el evento deportivo más grande del mundo en términos de audiencia televisiva?</p>
+                        <input type="radio" name="q10" value="false"> a) Copa Mundial de la FIFA<br>
+                        <input type="radio" name="q10" value="false"> b) Juegos Olímpicos<br>
+                        <input type="radio" name="q10" value="true"> c) Super Bowl
+                    </div>
+                    <button class="send-button" onclick="checkAnswers(1, 10)">Enviar</button>
+                </div>
+            </div>
+            <div class="test-box" >
+                <h3 onclick="openTest(2)">Test 2</h3>
+                <div class="quiz">
+                    <div class="question">
+                        <p>1. ¿Cuántos jugadores forman un equipo de balonmano durante un partido?</p>
+                        <input type="radio" name="q11" value="false"> a) 5<br>
+                        <input type="radio" name="q11" value="false"> b) 7<br>
+                        <input type="radio" name="q11" value="true"> c) 6
+                    </div>
+                    <div class="question">
+                        <p>2. ¿En qué deporte se utiliza la expresión "strike"?</p>
+                        <input type="radio" name="q12" value="false"> a) Fútbol<br>
+                        <input type="radio" name="q12" value="true"> b) Béisbol<br>
+                        <input type="radio" name="q12" value="false"> c) Baloncesto
+                    </div>
+                    <div class="question">
+                        <p>3. ¿Cuál es el deporte acuático que se practica con una tabla y una vela?</p>
+                        <input type="radio" name="q13" value="false"> a) Surf<br>
+                        <input type="radio" name="q13" value="false"> b) Esquí acuático<br>
+                        <input type="radio" name="q13" value="true"> c) Windsurf
+                    </div>
+                    <div class="question">
+                        <p>4. ¿Qué deporte se juega en una cancha llamada "frontón"?</p>
+                        <input type="radio" name="q14" value="false"> a) Tenis<br>
+                        <input type="radio" name="q14" value="true"> b) Pelota vasca<br>
+                        <input type="radio" name="q14" value="false"> c) Squash
+                    </div>
+                    <div class="question">
+                        <p>5. ¿En qué deporte se utiliza una red y una pluma?</p>
+                        <input type="radio" name="q15" value="false"> a) Tenis<br>
+                        <input type="radio" name="q15" value="true"> b) Bádminton<br>
+                        <input type="radio" name="q15" value="false"> c) Vóley
+                    </div>
+                    <div class="question">
+                        <p>6. ¿Cuál es el deporte en el que se practican disciplinas como kata y kumite?</p>
+                        <input type="radio" name="q16" value="false"> a) Taekwondo<br>
+                        <input type="radio" name="q16" value="true"> b) Karate<br>
+                        <input type="radio" name="q16" value="false"> c) Judo
+                    </div>
+                    <div class="question">
+                        <p>7. ¿En qué año se celebraron los primeros Juegos Olímpicos de la era moderna?</p>
+                        <input type="radio" name="q17" value="false"> a) 1886<br>
+                        <input type="radio" name="q17" value="false"> b) 1896<br>
+                        <input type="radio" name="q17" value="true"> c) 1894
+                    </div>
+                    <div class="question">
+                        <p>8. ¿Cuál es el país de origen del deporte del boxeo?</p>
+                        <input type="radio" name="q18" value="false"> a) Estados Unidos<br>
+                        <input type="radio" name="q18" value="true"> b) Inglaterra<br>
+                        <input type="radio" name="q18" value="false"> c) México
+                    </div>
+                    <div class="question">
+                        <p>9. ¿En qué deporte se destaca Usain Bolt?</p>
+                        <input type="radio" name="q19" value="false"> a) Salto con pértiga<br>
+                        <input type="radio" name="q19" value="false"> b) Salto triple<br>
+                        <input type="radio" name="q19" value="true"> c) Atletismo (corredor de velocidad)
+                    </div>
+                    <div class="question">
+                        <p>10. ¿Cuál es el deporte más popular en el mundo?</p>
+                        <input type="radio" name="q20" value="true"> a) Fútbol<br>
+                        <input type="radio" name="q20" value="false"> b) Baloncesto<br>
+                        <input type="radio" name="q20" value="false"> c) Cricket
+                    </div>
+                    <button class="send-button" onclick="checkAnswers(11, 20)">Enviar</button>
+                </div>
+            </div>
+            <div class="test-box" >
+                <h3 onclick="openTest(3)">Test 3</h3>
+                <div class="quiz">
+                    <div class="question">
+                        <p>1. ¿Cuál es el único deporte que se juega en la Luna?</p>
+                        <input type="radio" name="q21" value="false"> a) Golf<br>
+                        <input type="radio" name="q21" value="false"> b) Fútbol<br>
+                        <input type="radio" name="q21" value="true"> c) Ninguno (hasta ahora)
+                    </div>
+                    <div class="question">
+                        <p>2. ¿Quién es considerado el "Rey del Tenis"?</p>
+                        <input type="radio" name="q22" value="false"> a) Novak Djokovic<br>
+                        <input type="radio" name="q22" value="false"> b) Rafael Nadal<br>
+                        <input type="radio" name="q22" value="true"> c) Roger Federer
+                    </div>
+                    <div class="question">
+                        <p>3. ¿En qué año se incluyó el rugby en los Juegos Olímpicos modernos?</p>
+                        <input type="radio" name="q23" value="false"> a) 1896<br>
+                        <input type="radio" name="q23" value="false"> b) 1904<br>
+                        <input type="radio" name="q23" value="true"> c) 1900
+                    </div>
+                    <div class="question">
+                        <p>4. ¿Cuántas medallas de oro ganó Michael Phelps en los Juegos Olímpicos de Beijing 2008?</p>
+                        <input type="radio" name="q24" value="false"> a) 6<br>
+                        <input type="radio" name="q24" value="false"> b) 8<br>
+                        <input type="radio" name="q24" value="true"> c) 8
+                    </div>
+                    <div class="question">
+                        <p>5. ¿Qué equipo ganó la Copa Mundial de la FIFA en 2018?</p>
+                        <input type="radio" name="q25" value="false"> a) Alemania<br>
+                        <input type="radio" name="q25" value="true"> b) Francia<br>
+                        <input type="radio" name="q25" value="false"> c) Brasil
+                    </div>
+                    <div class="question">
+                        <p>6. ¿Cuál es el único país de América del Sur que ha ganado la Copa Mundial de la FIFA?</p>
+                        <input type="radio" name="q26" value="false"> a) Argentina<br>
+                        <input type="radio" name="q26" value="true"> b) Brasil<br>
+                        <input type="radio" name="q26" value="false"> c) Uruguay
+                    </div>
+                    <div class="question">
+                        <p>7. ¿Qué país es conocido como la cuna del ajedrez?</p>
+                        <input type="radio" name="q27" value="false"> a) China<br>
+                        <input type="radio" name="q27" value="true"> b) India<br>
+                        <input type="radio" name="q27" value="false"> c) Rusia
+                    </div>
+                    <div class="question">
+                        <p>8. ¿En qué ciudad se celebra el Torneo de Wimbledon?</p>
+                        <input type="radio" name="q28" value="false"> a) Nueva York<br>
+                        <input type="radio" name="q28" value="false"> b) París<br>
+                        <input type="radio" name="q28" value="true"> c) Londres
+                    </div>
+                    <div class="question">
+                        <p>9. ¿Cuál es el deporte nacional de Canadá?</p>
+                        <input type="radio" name="q29" value="false"> a) Hockey sobre hielo<br>
+                        <input type="radio" name="q29" value="false"> b) Lacrosse<br>
+                        <input type="radio" name="q29" value="true"> c) Curling
+                    </div>
+                    <div class="question">
+                        <p>10. ¿En qué deporte se destaca la leyenda Serena Williams?</p>
+                        <input type="radio" name="q30" value="false"> a) Atletismo<br>
+                        <input type="radio" name="q30" value="false"> b) Natación<br>
+                        <input type="radio" name="q30" value="true"> c) Tenis
+                    </div>
+                    <button class="send-button" onclick="checkAnswers(21, 30)">Enviar</button>
+                </div>
+            </div>
+            <div class="test-box">
+                <h3 onclick="openTest(4)">Test 4</h3>
+                <div class="quiz">
+                    <div class="question">
+                        <p>1. ¿En qué país se originó el deporte del cricket?</p>
+                        <input type="radio" name="q31" value="false"> a) Inglaterra<br>
+                        <input type="radio" name="q31" value="true"> b) India<br>
+                        <input type="radio" name="q31" value="false"> c) Australia
+                    </div>
+                    <div class="question">
+                        <p>2. ¿Cuántos puntos vale un touchdown en fútbol americano?</p>
+                        <input type="radio" name="q32" value="false"> a) 3<br>
+                        <input type="radio" name="q32" value="false"> b) 6<br>
+                        <input type="radio" name="q32" value="true"> c) 7
+                    </div>
+                    <div class="question">
+                        <p>3. ¿Cuál es el país de origen del maratón?</p>
+                        <input type="radio" name="q33" value="false"> a) Italia<br>
+                        <input type="radio" name="q33" value="true"> b) Grecia<br>
+                        <input type="radio" name="q33" value="false"> c) Francia
+                    </div>
+                    <div class="question">
+                        <p>4. ¿En qué deporte se utiliza una pala para golpear una pelota sobre una red?</p>
+                        <input type="radio" name="q34" value="false"> a) Golf<br>
+                        <input type="radio" name="q34" value="false"> b) Cricket<br>
+                        <input type="radio" name="q34" value="true"> c) Tenis de mesa
+                    </div>
+                    <div class="question">
+                        <p>5. ¿Cuál de los siguientes es un deporte de invierno?</p>
+                        <input type="radio" name="q35" value="true"> a) Snowboarding<br>
+                        <input type="radio" name="q35" value="false"> b) Surf<br>
+                        <input type="radio" name="q35" value="false"> c) Skateboarding
+                    </div>
+                    <div class="question">
+                        <p>6. ¿Cuál es el deporte que se juega con un volante en lugar de una pelota?</p>
+                        <input type="radio" name="q36" value="false"> a) Tenis<br>
+                        <input type="radio" name="q36" value="true"> b) Bádminton<br>
+                        <input type="radio" name="q36" value="false"> c) Squash
+                    </div>
+                    <div class="question">
+                        <p>7. ¿En qué año se celebró la primera Copa Mundial de la FIFA?</p>
+                        <input type="radio" name="q37" value="false"> a) 1922<br>
+                        <input type="radio" name="q37" value="false"> b) 1930<br>
+                        <input type="radio" name="q37" value="true"> c) 1934
+                    </div>
+                    <div class="question">
+                        <p>8. ¿Cuál es el equipo más laureado en la historia de la Fórmula 1?</p>
+                        <input type="radio" name="q38" value="false"> a) Ferrari<br>
+                        <input type="radio" name="q38" value="false"> b) Red Bull Racing<br>
+                        <input type="radio" name="q38" value="true"> c) Scuderia McLaren
+                    </div>
+                    <div class="question">
+                        <p>9. ¿En qué deporte se utiliza un octágono como área de combate?</p>
+                        <input type="radio" name="q39" value="false"> a) Boxeo<br>
+                        <input type="radio" name="q39" value="true"> b) Artes marciales mixtas (MMA)<br>
+                        <input type="radio" name="q39" value="false"> c) Judo
+                    </div>
+                    <div class="question">
+                        <p>10. ¿Cuántos jugadores componen un equipo de rugby durante un partido?</p>
+                        <input type="radio" name="q40" value="false"> a) 11<br>
+                        <input type="radio" name="q40" value="false"> b) 13<br>
+                        <input type="radio" name="q40" value="true"> c) 15
+                    </div>
+                    <button class="send-button" onclick="checkAnswers(31, 40)">Enviar</button>
+                </div>
+            </div>
+            <div id="not-added" class="sol">
+                <p>No ha superado la prueba por lo que no se le ha añadido a la base de datos</p>
+            </div>
+            <div id="not-added-yet" class="sol">
+                <p>Puede intentar superar otro test</p>
+            </div>
+            <div id="added" class="sol">
+                <p>Se le ha añadido a la base de datos</p>
+            </div>
+            <button class="send-button" onclick="signalServer('cerrado')">Limpiar sesion</button>
+        </div>
+        
+    </body>
+</html>

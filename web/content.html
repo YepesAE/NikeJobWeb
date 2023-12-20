@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <img src="./images/nike-logo-verde.png" alt="alt" class="logo"/>
+                <a href="index.html">Log out</a>
+            </div>
+            <div class="box half">
+                <div class="user-info">
+                    <p id="ciudadPreferente">Ciudad Preferente: </p>
+                    <p id="numConexiones">Número de conexiones: </p>
+                </div>
+                <h1>Bienvenido a la Página de Trabajos en Nike</h1>
+                <p>En Nike, no solo fabricamos productos deportivos; creamos oportunidades para que las personas alcancen su máximo potencial y superen sus límites. Si estás listo para ser parte de un equipo apasionado, innovador y enfocado en el rendimiento, ¡has llegado al lugar correcto!</p>
+                <h2>¿Por qué unirte a Nike?</h2>
+                <p>En Nike, nos esforzamos por inspirar e innovar en todo lo que hacemos. Desde diseñadores y desarrolladores hasta especialistas en marketing y atención al cliente, cada miembro de nuestro equipo juega un papel fundamental en el éxito de la marca.</p>
+                <p>Ofrecemos un entorno de trabajo dinámico, donde la diversidad y la inclusión son fundamentales. Valoramos la creatividad, la colaboración y el impulso constante hacia la excelencia.</p>
+                <h1>Bienvenido a nuestra plataforma de pruebas y evaluaciones</h1>
+                <p>En Nike Jobs, te ofrecemos la oportunidad de poner a prueba tus habilidades a través de una variedad de tests diseñados para medir tus conocimientos y competencias en diferentes áreas. Ya sea que estés buscando mejorar tus habilidades o prepararte para un próximo desafío, nuestros tests son una herramienta valiosa para evaluar tu rendimiento.</p>
+                <p>Al completar un test, recibirás una página de resultados detallada que te proporcionará información crucial sobre tu desempeño. Esta página te mostrará el número de fallos y el porcentaje de aciertos, brindándote una visión clara de tus habilidades en el área evaluada.</p>
+                <p>Es importante destacar que dependiendo de tu rendimiento, se tomarán decisiones específicas:</p>
+                <ol>
+                    <li>
+                        <strong>Porcentaje menor o igual al 33%:</strong>
+                        Se te informará que, lamentablemente, no serás añadido a nuestra base de datos en este momento. No te desanimes, ¡siempre hay oportunidades para mejorar!
+                    </li>
+                    <li>
+                        <strong>Porcentaje entre el 33% y 66%:</strong>
+                        Tendrás la opción de realizar un segundo test. En la página de resultados, encontrarás un botón que te llevará a una lista de tests para que elijas otro distinto al que has completado. Puedes tomar este segundo test inmediatamente o en otro momento, pero asegúrate de elegir uno diferente al primero. Los porcentajes obtenidos en ambos tests se sumarán, y si alcanzas más del 66%, serás considerado para ser incluido en nuestra base de datos.
+                    </li>
+                    <li>
+                        <strong>Porcentaje superior al 66%:</strong>
+                        ¡Enhorabuena! Te felicitaremos por tu excelente desempeño y serás añadido a nuestra base de datos como candidato destacado.
+                    </li>
+                </ol>
+                <p>Te invitamos a explorar nuestros diversos tests y a desafiarte a ti mismo. ¡Buena suerte en tus evaluaciones y que tengas una experiencia gratificante con Nike Jobs!</p>
+                <form action="TestsServlet" method="post">
+                    <button id="tests-access">Acceder a los tests</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

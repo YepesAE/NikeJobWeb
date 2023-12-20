@@ -110,3 +110,128 @@ body{
 form .input-div{
     width: 100% !important;
 }
+
+#login-form{
+    width: 80%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 50px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.header a{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-decoration: none;
+}
+
+.half{
+    width: 50%;
+    padding: 3rem;
+}
+
+.user-info{
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+#tests-access{
+    padding: 1rem;
+    background: #84A98C;
+    border-radius: 15px;
+    border: 2px solid #354F52;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.test-box{
+    padding: 1rem;
+    background: #FFFFFF90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.test-box2{
+    padding: 1rem;
+    background: #FFFFFF90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+.quiz{
+    display: none;
+    overflow-y: scroll;
+}
+
+.send-button{
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #84A98C;
+    border-radius: 15px;
+    border: 2px solid #354F52;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#not-added{
+    padding: 1rem;
+    background: #FFFFFF90;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+#not-added-yet{
+    padding: 1rem;
+    background: #FFFFFF90;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+#added{
+    padding: 1rem;
+    background: #FFFFFF90;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 2rem;
+}

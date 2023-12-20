@@ -5,11 +5,11 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  *
@@ -30,8 +30,8 @@ public class RegisterServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
+        String errorMessage = (String) request.getAttribute("error");
+        try (PrintWriter out = response.getWriter()) {    
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -73,6 +73,11 @@ public class RegisterServlet extends HttpServlet {
             out.println("</div>");
             
             out.println("<div class=\"input-div\">");
+            out.println("<p>Lugar donde quieres trabajar</p>");
+            out.println("<input id=\"lugar\" type=\"text\" name=\"lugar\" class=\"box-button\"/>");
+            out.println("</div>");
+            
+            out.println("<div class=\"input-div\">");
             out.println("<p>Contraseña</p>");
             out.println("<input id=\"password\" type=\"password\" name=\"pass\" class=\"box-button\"/>");
             out.println("</div>");
@@ -82,6 +87,9 @@ public class RegisterServlet extends HttpServlet {
             out.println("<input id=\"passwordRepeat\" type=\"password\" value=\"\" class=\"box-button\"/>");
             out.println("</div>");
             out.println("</form>");
+            if (errorMessage != null) {
+                out.println("<p style=\"color: red; width: 85%;\">" + errorMessage + "</p>");
+            }
             out.println("<input class=\"submit-button\" type=\"submit\" onclick=\"register()\"/>");
             out.println("</div>");
             out.println("</div>");

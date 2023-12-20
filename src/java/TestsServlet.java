@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -11,21 +10,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import static java.lang.System.out;
-import java.util.Enumeration;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.http.Cookie;
 
 /**
  *
- * @author yepes
+ * @author Antho
  */
-@WebServlet(urlPatterns = {"/addNewUser"})
-public class addNewUser extends HttpServlet {
+@WebServlet(urlPatterns = {"/TestsServlet"})
+public class TestsServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -39,39 +30,9 @@ public class addNewUser extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        Enumeration<String> parameterNames = request.getParameterNames();
-        boolean existe = false;
-        String username = request.getParameter("username");
-        String dni = request.getParameter("dni");
-        String datos = request.getParameter("username") + ";" + request.getParameter("pass") + ";" + request.getParameter("nombre") + ";" + request.getParameter("apellidos") + ";" + request.getParameter("dni") + ";" + request.getParameter("correo");
-        String directorio_de_ejecucion_de_la_aplicacion = new File(".").getCanonicalPath();
-        String sFile = directorio_de_ejecucion_de_la_aplicacion + "\\" + "registro.txt";
-        File fichero = new File(sFile);
-        System.out.println(sFile);
-        try (BufferedReader br = new BufferedReader(new FileReader(sFile))) {
-            String linea;
-
-            while ((linea = br.readLine()) != null) {
-                String[] palabras = linea.split(";");
-                if (palabras.length > 0 && palabras[0].equals(username) || palabras[4].equals(dni)){
-                    existe = true;
-                }
-            }
-        }
-        if(!existe){
-           try (BufferedWriter writer = new BufferedWriter(new FileWriter(fichero, true))) {
-                writer.write(datos);
-                writer.newLine();
-            } 
-           Cookie lugarCookie = new Cookie("lugar", request.getParameter("lugar"));
-           response.addCookie(lugarCookie);
-           response.sendRedirect("index.html");
-        }else{
-           request.setAttribute("error", "El usuario ya existe. Por favor, elige otro nombre de usuario.");
-           RequestDispatcher dispatcher = request.getRequestDispatcher("RegisterServlet");
-           dispatcher.forward(request, response);
-        }
+       response.sendRedirect("tests.html");
     }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -110,4 +71,5 @@ public class addNewUser extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
 }
