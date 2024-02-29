@@ -1,2 +1,2 @@
 # NikeJobWeb
-Página de NIke Jobs usando JS Vanilla y Glassfish server para la asignatura de DST
+Página de Nike Jobs usando JS Vanilla y Glassfish server para la asignatura de DST
